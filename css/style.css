@@ -1,0 +1,237 @@
+@import "font.css";
+
+* {
+  box-sizing: border-box;
+  font-family: "LemonMike";
+}
+body {
+  background-image: url("../img/background.svg");
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+.clearFix {
+  clear: both;
+}
+#content {
+  position: relative;
+  top: 170px;
+  width: 1100px;
+  height: 644px;
+  margin: auto;
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+#background-right {
+  z-index: 1;
+  height: 600px;
+  position: absolute;
+  width: 724px;
+  right: 20px;
+  background: url("../img/background.svg");
+  background-size: cover;
+  clip-path: polygon(
+    71% 3%,
+    100% 3%,
+    100% 43%,
+    99% 76%,
+    72.57% 100%,
+    23% 92%,
+    8% 61%,
+    20% 31%,
+    6.44% 2.84%
+  );
+  top: -10px;
+}
+/* Header */
+#header {
+  z-index: 2;
+  height: 60px;
+}
+#header-right {
+  float: right;
+  padding-top: 28px;
+}
+
+#header-right .login-buttons {
+  margin-right: 20px;
+  display: inline-block;
+}
+/* Buttons */
+#header-right .login-buttons a {
+  margin-left: 40px;
+}
+#header-right .sign-up {
+  border: #fff 3px solid;
+  border-radius: 40px;
+  padding: 10px 14px;
+}
+/* Nav */
+#header-right li {
+  display: inline-block;
+  margin-left: 40px;
+}
+#header-right li a {
+  color: #838cb9;
+}
+#header-right #nav {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+#header-left {
+  float: left;
+}
+#header-left .title {
+  padding-top: 28px;
+  color: #5d6370;
+  font-size: 30px;
+  position: absolute;
+  top: -24px;
+  left: 100px;
+}
+
+/* Article */
+#main {
+  /* background-color: red; */
+  margin-top: 150px;
+}
+#main #article-right {
+  position: relative;
+  float: right;
+  z-index: 4;
+}
+/* #main #article-right div{
+    display: inline-block;
+} */
+#main #article-right .circle-main-bg {
+  position: relative;
+  right: 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    51deg,
+    hsla(342, 96.7%, 64.7%, 1) 0%,
+    hsla(26, 94.4%, 71.8%, 1) 90%
+  );
+}
+#main #article-right .orbit {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  right: 164px;
+  top: -324px;
+  border: 2px #fff solid;
+  border-radius: 50%;
+}
+#main #article-right .littel-circle {
+  position: relative;
+  top: -558px;
+  right: 160px;
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(
+    51deg,
+    hsla(342, 96.7%, 64.7%, 1) 0%,
+    hsla(26, 94.4%, 71.8%, 1) 90%
+  );
+  border-radius: 50%;
+}
+#main #article-right .oribit-img {
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+#main #article-right .up-img {
+  top: -700px;
+  width: 220px;
+  height: 220px;
+  background-color: #ffc9d7;
+  border: 10px solid #fdfdfe;
+  padding-top: 30px;
+  right: 56px;
+}
+.up-img img {
+  width: 124px;
+}
+
+#main #article-right .down-img {
+  width: 90px;
+  height: 90px;
+  background-color: #ae8df2;
+  border: 6px solid #fff;
+  padding-top: 6px;
+  top: -614px;
+  right: -18px;
+}
+.down-img img {
+  width: 56px;
+}
+
+#main #article-right .left-img {
+  width: 180px;
+  height: 180px;
+  background-image: radial-gradient(
+    circle,
+    hsla(335, 74.1%, 57.6%, 1) 0%,
+    hsla(334, 59.8%, 34.1%, 1) 100%
+  );
+  border: 8px solid #fff;
+  padding-top: 20px;
+  top: -808px;
+  right: 214px;
+}
+.left-img img {
+  width: 108px;
+}
+
+#main #article-left {
+  position: relative;
+  left: 84px;
+  float: left;
+  /* background-color: red; */
+}
+#main .article-header {
+  margin-top: -44px;
+}
+#main .article-header a {
+  color: #3988b9;
+}
+#main .article-main {
+  margin-top: 30px;
+}
+#main .article-main h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#main .article-footer {
+  margin-top: 20px;
+}
+#main .article-footer a {
+  padding: 10px 26px;
+  border-radius: 20px;
+  width: 168px;
+  display: inline-block;
+  text-align: center;
+}
+#main .article-footer .for-brands {
+  background-image: linear-gradient(
+    76deg,
+    hsla(215, 66.4%, 49%, 1) 0%,
+    hsla(198, 92.8%, 56.3%, 1) 100%
+  );
+  margin-left: 10px;
+}
+#main .article-footer .for-podcasts {
+  background-image: linear-gradient(
+    51deg,
+    hsla(342, 96.7%, 64.7%, 1) 0%,
+    hsla(26, 94.4%, 71.8%, 1) 90%
+  );
+}
